@@ -2,14 +2,16 @@
 const CORRECT_ANSWERS = {
     question1: 'a',
     question2: 'b',
-    question3: 'a'
+    question3: 'a',
+    question4: 'd',
+    question5: 'c'
 };
 
 // collect data from the form
 var dataForm = document.querySelector('#quiz-form');
 
 var score = 0; // initial score of the test
-var totalScore = 6;
+var totalScore = 25;
 
 // button action to be performed after data is submitted
 dataForm.addEventListener('submit', function(event) {
@@ -35,7 +37,7 @@ function compareResult(userData) {
         let userAnswer = answer[1];
         if(userAnswer === CORRECT_ANSWERS[question] ){
             // console.log('correct');
-            score+=2;
+            score+=5;
         } else {
             console.log(score);
         };
@@ -44,7 +46,9 @@ function compareResult(userData) {
 
     // display score to user
     let userScore = document.querySelector('.score'); 
-    userScore.textContent = score;
+    userScore.textContent = `Your score is: ${score} out of ${totalScore}`;
     
+    // hide submit button after click
+    let btn = document.getElementsByTagName(button);
+    btn.style.display = "none";
 };
-
