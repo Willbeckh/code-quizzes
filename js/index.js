@@ -49,6 +49,6 @@ function compareResult(userData) {
     userScore.textContent = `Your score is: ${score} out of ${totalScore}`;
     
     // hide submit button after click
-    let btn = document.getElementsByTagName(button);
-    btn.style.display = "none";
+    let btn = document.querySelector('#btn');
+    btn.disabled = true;
 };
