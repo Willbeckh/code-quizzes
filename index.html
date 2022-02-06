@@ -9,19 +9,32 @@
 <body>
     <section id="wrapper">
         <div id="quiz-board">
-            <h2>JavaScript Test.</h2>
+            <h2>Quiz Board.</h2>
             <form action="" id="quiz-form">
                 <div>
-                    <h3>What is Javascript?</h3>
-                    <input type="radio" name="javascript" value="scripting">Scripting language
-                    <input type="radio" name="javascript" value="markup">Markup Language
-                    <input type="radio" name="javascript" value="design">Design Language
+                    <h3>1. What is Javascript?</h3>
+                    <input type="radio" name="question1" value="a" checked>Scripting language
+                    <input type="radio" name="question1" value="b">Markup Language
+                    <input type="radio" name="question1" value="c">Design Language
                 </div>
                 <div>
-                    <h3>What is the current version of Javascript?</h3>
-                    inpu
+                    <h3>2. What is the current version of Javascript?</h3>
+                    <input type="radio" name="question2" value="a" checked>JavaScript 2014
+                    <input type="radio" name="question2" value="b">ES6
+                    <input type="radio" name="question2" value="c">JavaScript 1
+                </div>
+                <div>
+                    <h3>2. Which HTML tag do we use to link Js code ina HTML doc.</h3>
+                    <input type="radio" name="question3" value="a">script
+                    <input type="radio" name="question3" value="b">javascript
+                    <input type="radio" name="question3" value="c" checked>code
                 </div>
                 <button type="submit">Submit test.</button>
+
+                <div>
+                    <p>your Score is: </p>
+                    <p class="score"></p>
+                </div>
             </form>
         </div>
     </section>
