@@ -8,51 +8,52 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Quizzer</title>
 </head>
-<body class="p-3 mb-2 bg-secondary">
+<body class="p-3 mb-2">
     <section class="container p-3 mb-2 bg-info" >
         <div id="quiz-board" class="col align-self-center">
-            <h2>Javascript Quiz Board.</h2>
+            <h2 class="text-center">Javascript Quiz Board.</h2>
             <form action="" id="quiz-form">
                 <div class="form-check">
                     <h3 class="h3">1. What is Javascript?</h3>
-                    <input type="radio" name="question1" value="a">A: Scripting language
-                    <input type="radio" name="question1" value="b">B: Markup Language
-                    <input type="radio" name="question1" value="c">C: Design Language
-                    <input type="radio" name="question1" value="d">D: OOP Language
+                    <input type="radio" name="question1" value="a">A: Scripting language <br>
+                    <input type="radio" name="question1" value="b">B: Markup Language <br> 
+                    <input type="radio" name="question1" value="c">C: Design Language <br>
+                    <input type="radio" name="question1" value="d">D: OOP Language <br>
                 </div>
                 <div class="form-check">
                     <h3 class="h3">2. What is the current version of Javascript?</h3>
-                    <input type="radio" name="question2" value="a">A: JavaScript 2014
-                    <input type="radio" name="question2" value="b">B: ES6
-                    <input type="radio" name="question2" value="c">C: JavaScript 1
-                    <input type="radio" name="question1" value="d">D: ES5
+                    <input type="radio" name="question2" value="a">A: JavaScript 2014 <br>
+                    <input type="radio" name="question2" value="b">B: ES6 <br>
+                    <input type="radio" name="question2" value="c">C: JavaScript 1 <br>
+                    <input type="radio" name="question1" value="d">D: ES5 <br>
                 </div>
                 <div class="form-check">
                     <h3 class="h3">3. Which HTML tag do we use to link Js code ina HTML doc.</h3>
-                    <input type="radio" name="question3" value="a">A: script
-                    <input type="radio" name="question3" value="b">B: link
-                    <input type="radio" name="question3" value="c">C: code
-                    <input type="radio" name="question3" value="d">D: html
+                    <input type="radio" name="question3" value="a">A: script <br>
+                    <input type="radio" name="question3" value="b">B: link <br>
+                    <input type="radio" name="question3" value="c">C: code <br>
+                    <input type="radio" name="question3" value="d">D: html <br>
                 </div>
                 <div class="form-check">
                     <h3 class="h3">4. Boolean is a Javascript datatype.</h3>
-                    <input type="radio" name="question4" value="a">A: false
-                    <input type="radio" name="question4" value="b">B: none of both
-                    <input type="radio" name="question4" value="c">C: both are true
-                    <input type="radio" name="question4" value="d">D: true
+                    <input type="radio" name="question4" value="a">A: false <br>
+                    <input type="radio" name="question4" value="b">B: none of both <br>
+                    <input type="radio" name="question4" value="c">C: both are true <br>
+                    <input type="radio" name="question4" value="d">D: true <br>
                 </div>
                 <div class="form-check">
                     <h3 class="h3">5. Which of the following statements is true.</h3>
-                    <input type="radio" name="question5" value="a">A: Javascript is a design language.
-                    <input type="radio" name="question5" value="b">B: Javascript does not support Object Oriented Programming.
-                    <input type="radio" name="question5" value="c">C: Javascript is used to add dynamicity to a website.
-                    <input type="radio" name="question5" value="d">D: Javascript is a HTML framework.
+                    <input type="radio" name="question5" value="a">A: Javascript is a design language. <br>
+                    <input type="radio" name="question5" value="b">B: Javascript does not support Object Oriented Programming. <br>
+                    <input type="radio" name="question5" value="c">C: Javascript is used to add dynamicity to a website. <br>
+                    <input type="radio" name="question5" value="d">D: Javascript is a HTML framework. <br>
                 </div>
+                <hr>
                 <button type="submit" id="btn" class="btn btn-secondary border border-success">Submit test.</button>
 
-                <div>
+                <div class="score-box">
                     <!-- <p>your Score is: </p> -->
-                    <p class="score"></p>
+                    <p class="score bg-success"></p>
                 </div>
             </form>
         </div>
