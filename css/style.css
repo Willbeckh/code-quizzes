@@ -1,11 +1,17 @@
 /* site layout */
+/*import font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: #fff;
+    background-color: rgba(228, 227, 227, 0.63);
+}
+h2 {
+    font-family: 'Special Elite', cursive;
 }
 
 section {
@@ -18,4 +24,13 @@ input[type="radio"] {
     /* padding: 10px; */
     margin: 8px;
     color: #fff;
+    cursor: pointer;
+}
+
+.score-box {
+    width: 30%;
+    /* height: 40px; */
+    padding: 10px;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.4em;
 }
