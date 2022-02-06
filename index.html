@@ -9,9 +9,12 @@
     <title>Quizzer</title>
 </head>
 <body class="p-3 mb-2">
-    <section class="container p-3 mb-2 bg-info" >
+    <!-- add section for landing page here -->
+
+    <section class="container p-3 mb-2 bg-info rounded" >
         <div id="quiz-board" class="col align-self-center">
-            <h2 class="text-center">Javascript Quiz Board.</h2>
+            <h2 class="text-center text-white">Javascript Quiz Board.</h2>
+            <hr>
             <form action="" id="quiz-form">
                 <div class="form-check">
                     <h3 class="h3">1. What is Javascript?</h3>
@@ -49,9 +52,9 @@
                     <input type="radio" name="question5" value="d">D: Javascript is a HTML framework. <br>
                 </div>
                 <hr>
-                <button type="submit" id="btn" class="btn btn-secondary border border-success">Submit test.</button>
+                <button type="submit" id="btn" class="btn btn-success border border-success">Submit test.</button>
 
-                <div class="score-box">
+                <div class="score-box mx-auto">
                     <!-- <p>your Score is: </p> -->
                     <p class="score bg-success"></p>
                 </div>
