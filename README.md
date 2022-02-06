@@ -11,11 +11,11 @@
 <p>This is the 3rd week indipendent project, this application is a recap of what I have learnt on week three in Moringa School.</p>
 <p>This site is a web application that lets a user take quizes on Javascript language.
 The user is then awarded a score based on how many questions are answered correct</p>
-<p> View the live site [here]()</p>
+<p> View the live site https://willbeckh.github.io/code-quizzes/</p>
 
 ## Installation
  <p>to install this project into your machine</p>
- - Clone `git clone https://github.com/Willbeckh/code-quizzes.git`
+ - Clone `git clone https://github.com/Willbeckh/code-quizzes.git `
  - `cd code-quizzes` this is where the project files are located.
  
  ### Prerequisites
