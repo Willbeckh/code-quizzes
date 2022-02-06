@@ -1,32 +1,54 @@
 // store the correct answers here
 const CORRECT_ANSWERS = {
-    javascript: 'scripting'
-}
+    question1: 'a',
+    question2: 'b',
+    question3: 'a',
+    question4: 'd',
+    question5: 'c'
+};
 
 // collect data from the form
-let dataForm = document.querySelector('#quiz-form');
+var dataForm = document.querySelector('#quiz-form');
 
+var score = 0; // initial score of the test
+var totalScore = 25;
 
-// code action to be performed after data is submitted
+// button action to be performed after data is submitted
 dataForm.addEventListener('submit', function(event) {
-    // prevent default action
-    event.preventDefault();
+    event.preventDefault(); // prevents default action
 
-    console.log("btn-data submitted");
-    // creates an new instance from the form variable that store the user data
+    // console.log("btn-data submitted");
+    // creates an new instance from the form variable that stores the user data
     var userData = new FormData(dataForm);
-    // call the function that compares user data to coreect ans
+
+    // call the function that compares user data to correct ans
     compareResult(userData);
+    // console.log(typeof userData); // check datatype of useranswers(obj)
 });
 
 // compare the data with correct answers
 function compareResult(userData) {
-    // this is where we contrast the dat enterd.
-    let quiz1 = userData.get('javascript');
 
-    if(quiz1 === CORRECT_ANSWERS.javascript) {
-        alert("correct answer.");
-    } else {
-        alert("oooliskia wapi.!")
-    }
+    // console.log(userAnswers.length); //typeof useranswers; object;
+    // for loop with if statement
+    for(let answer of userData) {
+        // console.log(answer);
+        let question = answer[0];
+        let userAnswer = answer[1];
+        if(userAnswer === CORRECT_ANSWERS[question] ){
+            // console.log('correct');
+            score+=5;
+        } else {
+            console.log(score);
+        };
+    };
+    // console.log(`current score is ${score}`) //log the current score
+
+    // display score to user
+    let userScore = document.querySelector('.score'); 
+    userScore.textContent = `Your score is: ${score} out of ${totalScore}`;
+    
+    // hide submit button after click
+    let btn = document.querySelector('#btn');
+    btn.disabled = true;
 };
