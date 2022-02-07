@@ -12,6 +12,7 @@
 <p>This site is a web application that lets a user take quizes on Javascript language.
 The user is then awarded a score based on how many questions are answered correct</p>
 <p> View the live site https://willbeckh.github.io/code-quizzes/</p>
+<p> Project design on Figma: https://www.figma.com/file/OjwWxnBeXGQKqDKMa3wyt8/quizzer?node-id=2%3A20.</p>
 
 ## Installation
  <p>to install this project into your machine</p>
